@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textres": {
+    "layer0": "berserkmod:items/berserker_helmet"
+  }
+}

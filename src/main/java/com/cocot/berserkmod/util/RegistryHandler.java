@@ -1,6 +1,7 @@
 package com.cocot.berserkmod.util;
 
 import com.cocot.berserkmod.BerserkMod;
+import com.cocot.berserkmod.items.BerserkerHelmetItem;
 import com.cocot.berserkmod.items.CrimsonBehelitItem;
 import com.cocot.berserkmod.items.DragonSlayerItem;
 import com.cocot.berserkmod.items.NormalBehelitItem;
@@ -9,6 +10,8 @@ import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
+
+import java.util.Objects;
 
 public class RegistryHandler {
     public static final DeferredRegister<Item> ITEMS = new DeferredRegister<>(ForgeRegistries.ITEMS, BerserkMod.MOD_ID);
@@ -19,6 +22,7 @@ public class RegistryHandler {
     public static final RegistryObject<Item> DRAGONSLAYER = ITEMS.register("dragonslayer", DragonSlayerItem::new);
     public static final RegistryObject<Item> NORMAL_BEHELIT = ITEMS.register("normal_behelit", NormalBehelitItem::new);
     public static final RegistryObject<Item> CRIMSON_BEHELIT = ITEMS.register("crimson_behelit", CrimsonBehelitItem::new);
+    public static final RegistryObject<Item> BERSERKER_HELMET = ITEMS.register("berserker_helmet", BerserkerHelmetItem::new);
 }
 
 
