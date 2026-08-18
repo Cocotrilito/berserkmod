@@ -4,7 +4,9 @@
   "itemGroup.berserkmod": "Berserk Mod",
   "item.berserkmod.crimson_behelit": "Crimson Behelit",
   "item.berserkmod.normal_behelit": "Behelit,",
-  "item.berserkmod.berserker_helmet": "Berserker Helmet"
-
+  "item.berserkmod.berserker_helmet": "Berserker Helmet",
+  "item.berserkmod.berserker_chestplate": "Berserker Chestplate",
+  "item.berserkmod.berserker_leggings": "Berserker Leggings",
+  "item.berserkmod.berserker_boots": "Berserker Boots"
 
 }

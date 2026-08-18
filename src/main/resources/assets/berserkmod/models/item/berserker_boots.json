@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "berserkmod:items/berserker_helmet"
+    "layer0": "berserkmod:items/berserker_boots"
   }
 }
