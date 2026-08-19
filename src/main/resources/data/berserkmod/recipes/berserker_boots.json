@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "x x",
+    "x x"
+  ],
+  "key": {
+    "x": {
+      "item": "berserkmod:beast_fang"
+    }
+  },
+  "result": {
+    "item": "berserkmod:berserker_boots",
+    "count": 1
+  }
+}
