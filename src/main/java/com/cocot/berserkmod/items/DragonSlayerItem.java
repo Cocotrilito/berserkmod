@@ -46,7 +46,7 @@ public class DragonSlayerItem extends SwordItem {
                 !leggings.getItem().equals(RegistryHandler.BERSERKER_LEGGINGS.get()) &&
                 !boots.getItem().equals(RegistryHandler.BERSERKER_BOOTS.get())) {
                 player.addPotionEffect(new EffectInstance(Effects.SLOWNESS, 160, 1));
-                player.addPotionEffect(new EffectInstance(Effects.WEAKNESS, 160, 0));
+                player.addPotionEffect(new EffectInstance(Effects.WEAKNESS, 160, 1));
             }
         }
 

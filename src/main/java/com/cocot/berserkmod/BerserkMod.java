@@ -1,5 +1,6 @@
 package com.cocot.berserkmod;
 
+import com.cocot.berserkmod.util.ModEventHandler;
 import com.cocot.berserkmod.util.RegistryHandler;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -21,6 +22,7 @@ public class BerserkMod {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
         RegistryHandler.init();
         MinecraftForge.EVENT_BUS.register(this);
+        MinecraftForge.EVENT_BUS.register(new ModEventHandler());
     }
 
     private void setup (final FMLCommonSetupEvent event) {
