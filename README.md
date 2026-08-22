@@ -64,7 +64,7 @@ oh gosh
 ## Screenshots
 
 <img src="images/allsets.png" width="400">
-<img src="images/finaldemo.png width="400"
+<img src="images/finaldemo.png width="400">
 
 
 ## Special thanks
