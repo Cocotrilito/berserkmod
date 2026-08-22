@@ -102,8 +102,8 @@ public class ModEventHandler {
                 }
             }
         }
-        if (player.inventory.count(RegistryHandler.CRIMSON_BEHELIT.get())) {
-            ItemStack behelitStack = player.inventory.decrStackSize(player.inventory.getSlotFor(new ItemStack(RegistryHandler.CRIMSON_BEHELIT)))
+        if (player.inventory.count(RegistryHandler.CRIMSON_BEHELIT.get()) > 1) {
+            player.inventory.decrStackSize(player.inventory.getSlotFor(new ItemStack(RegistryHandler.CRIMSON_BEHELIT.get())), 1);
         }
     }
     @SubscribeEvent
