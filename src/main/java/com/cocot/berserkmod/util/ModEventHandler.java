@@ -1,6 +1,7 @@
 package com.cocot.berserkmod.util;
 
 import com.cocot.berserkmod.BerserkMod;
+import com.cocot.berserkmod.items.ProtectionTalismanItem;
 import net.minecraft.client.audio.Sound;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.item.ItemEntity;
@@ -9,6 +10,7 @@ import net.minecraft.entity.monster.SpiderEntity;
 import net.minecraft.entity.monster.WitherSkeletonEntity;
 import net.minecraft.entity.monster.ZombieEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Effect;
 import net.minecraft.potion.EffectInstance;
@@ -20,8 +22,10 @@ import net.minecraft.util.text.TextFormatting;
 import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraftforge.event.entity.living.LivingDropsEvent;
+import net.minecraftforge.event.entity.living.LivingEntityUseItemEvent;
 import net.minecraftforge.event.entity.player.PlayerSleepInBedEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.RegistryObject;
 
 import java.util.Random;
 
@@ -99,4 +103,16 @@ public class ModEventHandler {
             event.setCanceled(true);
         }
     }
+    @SubscribeEvent
+    public void onItemUseFinish (LivingEntityUseItemEvent.Finish event) {
+        if (event.getEntity() instanceof PlayerEntity) {
+            PlayerEntity player = (PlayerEntity) event.getEntity();
+            ItemStack item = event.getItem();
+            if (item.getItem().equals(RegistryHandler.PROTECTION_TALISMAN.get())) {
+                player.removeActivePotionEffect(RegistryHandler.SACRIFICE_BRAND.get());
+            }
+
+        }
+    }
+
 }

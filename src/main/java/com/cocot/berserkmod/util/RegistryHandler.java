@@ -28,6 +28,7 @@ public class RegistryHandler {
     public static final RegistryObject<Item> BERSERKER_BOOTS = ITEMS.register("berserker_boots", () -> new BerserkerArmorItem(EquipmentSlotType.FEET));
     public static final RegistryObject<Item> BEAST_FANG = ITEMS.register("beast_fang", BeastFangItem::new);
     public static final RegistryObject<Effect> SACRIFICE_BRAND = EFFECTS.register("sacrifice_brand", SacrificeBrandEffect::new);
+    public static final RegistryObject<Item> PROTECTION_TALISMAN = ITEMS.register("protection_talisman", ProtectionTalismanItem::new);
 }
 
 
