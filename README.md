@@ -1,5 +1,5 @@
 <div align="center">
-<img src="images/favicon.png" width="400">
+<img src="images/favicon.png" width="400" style="image-rendering: pixelated; image-rendering: -moz-crisp-edges; image-rendering:  crisp-edges;">
 
 # BerserkMod
 *A Minecraft mod for those who carry a sword too heavy to be called one*
@@ -64,7 +64,7 @@ oh gosh
 ## Screenshots
 
 <img src="images/allsets.png" width="400">
-<img src="images/finaldemo.png width="400">
+<img src="images/finaldemo.png" width="400">
 
 
 ## Special thanks
