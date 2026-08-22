@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "FGF",
+    "FBF",
+    "FGF"
+  ],
+  "key": {
+    "F": {
+      "item": "berserkmod:beast_fang"
+    },
+    "G": {
+      "item": "minecraft:ghast_tear"
+    },
+    "B": {
+      "item": "berserkmod:normal_behelit"
+    }
+  },
+  "result": {
+    "item": "berserkmod:crimson_behelit",
+    "count": 1
+  }
+}

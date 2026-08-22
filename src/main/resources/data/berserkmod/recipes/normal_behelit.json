@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " S ",
+    "BRB",
+    " B "
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:spider_eye"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "B": {
+      "item": "minecraft:bone"
+    }
+  },
+  "result": {
+    "item": "berserkmod:normal_behelit",
+    "count": 1
+  }
+}
